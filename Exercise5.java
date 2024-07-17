@@ -8,15 +8,19 @@ import java.util.Scanner;
 public class Exercise5 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Digite uma sequencia de numeros inteiros:");
-        int n = sc.nextInt();
+        System.out.println("Digite uma sequencia de numeros inteiros:");//Apresentação de proposta para usuario
 
-        int i = 0;
-        while (n > 0) {
-            i *= 10;
+        //Declaração de variaveis
+        int n = sc.nextInt();//declaração com captura de valor digitado
+        int i = 0; //declaração com implementação
+
+        while (n > 0) {//Condição a ser testada
+            //casos seja verdade realiza a inversão
+            //lembrando que a inversão e apenas a multiplicação e divisão
+            i *= 10; i =
             i += (n% 10);
             n /= 10;
         }
-        System.out.println("Numero ao contrario:" + i);
+        System.out.println("Numero ao contrario:" + i);//Apresentação do valor ao contrario
     }
 }
